@@ -3,22 +3,13 @@
 Repository supporting the CMMR 2023 post-symposium proceedings paper "Challenging Beat Tracking: Tackling Polyrhythm, Polymetre, and Polytempo with Human-in-the-Loop Adaptation", to be published by Springer Verlag in the LNCS series.
 
 This repository contains the *Piano Phase* dataset used in our study, including:
-- Audio files: The main files are `pianophaseM_A` and `pianophaseM_B`, which contain the mixed audio of both streams with ground-truth annotations for streams A and B, respectively, each with a duration of 2 minutes. Additionally, `pianophaseA_A` and `pianophaseB_B` provide solo renditions of streams A and B, with corresponding annotations, and are included (as well as `pianophaseA_B` and `pianophaseB_A`)for testing purposes. 
-- Beat annotations;
-- Pd patch used for generating the audio.
+- Audio files (`/pianophase/audio`): The main files are `pianophaseM_A` and `pianophaseM_B`, which contain the mixed audio of both streams with ground-truth annotations for streams A and B, respectively, each with a duration of 2 minutes. Additionally, `pianophaseA_A` and `pianophaseB_B` provide solo renditions of streams A and B, with corresponding annotations, and are included (as well as `pianophaseA_B` and `pianophaseB_A`)for testing purposes. 
+- Beat annotations (`/pianophase/annotations/beats`): The ground-truth beat annotations;
+- Pd patch (`/pd_patch`): used for generating the audio.
  
 
-## Repository Structure
-
-```
-/pianophase/audio               - Piano Phase audio files with varying tempo conditions
-/pianophase/annotations/beats   - Ground truth beat annotations
-/pd_patch                       - Pure Data patch for the (simplified) Piano Phase audio generation
-```
-
-
 ## Citation
-
+If you use this dataset in your research, please cite the following paper:
 ```bibtex
 @inproceedings{polyrhythmic2023,
     title={Challenging Beat Tracking: Tackling Polyrhythm, Polymetre, and Polytempo with Human-in-the-Loop Adaptation},
